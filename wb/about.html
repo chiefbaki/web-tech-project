@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img data-wow-duration="1s" class="logo  wow animate__animated animate__fadeInLeftBig" src="img/logo.png" alt="Logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="course.html">Course</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+<h1 class="title_about">ABOUT US</h1>
+
+	</section>
+
+
+<!-- about us content-->
+
+<div class="about-us">
+	<div class="row">
+		<div data-wow-delay="1s" class="about-col wow animate__animated animate__fadeIn"><h1>We`re the one of the best Universities in Kyrgyzstan</h1>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, inventore neque ipsam minima assumenda
+			dolorem rem ipsum accusamus quo cumque!</p><br>
+			<a class="hero-btn red-btn" href="#">EXPLORE NOW</a>
+		</div>
+	
+		<div class="about-col">
+			<img src="./img/about.jpg" alt="">
+		</div>
+	</div>
+</div>
+
+
+<!---footer--->
+
+<footer class="footer">
+	<h4 data-wow-delay="1s" class="wow animate__animated animate__fadeIn">About us</h4>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptate.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"> by IK</i></p>
+</footer>	
+
+</section>
+
+<!---JavaScript--->
+
+<script src="./wow.min.js"></script>
+
+<script>
+	new WOW().init();
+</script>
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+
+</script>
+	
+</body>
+</html>	
